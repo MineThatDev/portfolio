@@ -108,22 +108,22 @@
           class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center q-pr-xl"
         >
           <q-img
-            class="q-ml-xl"
+            style="margin-left: 49px"
             src="../assets/images/html.jpg"
-            width="36px"
-            height="36px"
+            width="38px"
+            height="38px"
           ></q-img>
           <q-img
-            class="q-ml-xl"
+            style="margin-left: 50px"
             src="../assets/images/css.png"
             width="31px"
             height="31px"
           ></q-img>
           <q-img
-            class="q-ml-xl"
+            style="margin-left: 50px"
             src="../assets/images/javascript.png"
-            width="37px"
-            height="37px"
+            width="40px"
+            height="40px"
           ></q-img>
         </div>
         <div

@@ -1,9 +1,18 @@
 <template>
   <q-header>
-    <q-toolbar class="bg-white text-dark q-py-sm q-px-lg">
-      <div class="font-montserrat-bold font-size-22">Ruchchanon.dev</div>
+    <q-toolbar class="bg-white text-dark q-py-sm">
+      <div
+        class="font-montserrat-bold font-size-22"
+        :class="$q.screen.gt.sm ? 'q-px-md' : 'q-px-sm'"
+      >
+        Ruchchanon.dev
+      </div>
       <q-space />
-      <q-tabs v-model="tab" shrink>
+      <q-tabs
+        v-model="tab"
+        shrink
+        :class="$q.screen.gt.sm ? 'q-px-md' : 'q-px-sm'"
+      >
         <q-tab
           v-for="(item, index) in headerTabs"
           :key="index"

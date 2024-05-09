@@ -1,9 +1,15 @@
 <template>
   <div class="row" style="width: 1000px">
-    <div class="col-12 q-px-md">
+    <div
+      class="col-12 q-px-md"
+      :class="$q.screen.gt.sm ? 'text-left' : 'text-center'"
+    >
       <div class="text-black font-montserrat-bold font-size-28">Contact</div>
     </div>
-    <div class="q-mt-xl full-width q-pa-md">
+    <div
+      class="full-width q-pa-md"
+      :class="$q.screen.gt.sm ? 'q-mt-lg' : 'q-mt-md'"
+    >
       <form @submit.prevent.stop="onSubmit" @reset.prevent.stop="onReset">
         <div class="row col-12">
           <div class="col-12">
@@ -87,7 +93,7 @@
           </div>
         </div>
 
-        <div class="text-center q-mt-lg" id="contact">
+        <div class="text-center q-mt-lg">
           <q-btn
             label="Submit"
             type="submit"

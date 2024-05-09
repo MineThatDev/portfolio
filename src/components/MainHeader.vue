@@ -7,7 +7,7 @@
         <q-tab
           v-for="(item, index) in headerTabs"
           :key="index"
-          class="font-montserrat-bold font-size-16"
+          class="font-montserrat-bold font-size-14"
           :name="item.name"
           >{{ item.label }}</q-tab
         >

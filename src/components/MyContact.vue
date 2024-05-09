@@ -10,7 +10,7 @@
       class="full-width q-pa-md"
       :class="$q.screen.gt.sm ? 'q-mt-lg' : 'q-mt-md'"
     >
-      <form @submit.prevent.stop="onSubmit" @reset.prevent.stop="onReset">
+      <form @submit.prevent.stop="onSubmit">
         <div class="row col-12">
           <div class="col-12">
             <span class="font-montserrat-regular font-size-16">Email</span>
@@ -67,7 +67,6 @@
               outlined
               v-model="companyName"
               placeholder="Company name"
-              lazy-rules="ondemand"
               hide-bottom-space
               color="dark"
             />
@@ -88,6 +87,7 @@
               :rules="[(val) => val?.length || 'Please enter a message.']"
               hide-bottom-space
               color="dark"
+              lazy-rules="ondemand"
               @focus="messageRef.resetValidation()"
             />
           </div>
@@ -153,7 +153,7 @@ export default {
         dark: true,
       }).onOk(async () => {
         showSpinnerFacebookLoading();
-        await sendEmail(
+        const response = await sendEmail(
           "service_apwgf1u",
           "template_ejdx6nf",
           {
@@ -166,8 +166,18 @@ export default {
           },
           "Bnzo6dG5nRlgeMOTH"
         );
-        hideSpinnerFacebookLoading();
-        showNotification("positive", "ส่งอีเมลสำเร็จ !");
+        if (response && response.status == 200) {
+          hideSpinnerFacebookLoading();
+          showNotification("positive", "Email sent successfully");
+        } else {
+          hideSpinnerFacebookLoading();
+          showNotification("negative", "Email failed to send");
+        }
+
+        email.value = null;
+        fullName.value = null;
+        companyName.value = null;
+        message.value = null;
       });
     };
 

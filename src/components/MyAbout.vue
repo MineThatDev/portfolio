@@ -27,9 +27,9 @@
         <div
           class="font-montserrat-regular font-size-14 text-black q-px-xl font-size-20"
         >
-          I've been graduated in Bachelor of computer science at Khonkaen
-          University, (2018-2021). I'm a worked as a Web Developer, with 2 years
-          of experiences (Front-End)
+          The name's Ruchchanon Sirisan, I've been graduated in Bachelor of
+          computer science at Khonkaen University, (2018-2021). I'm a worked as
+          a Web Developer, with 2 years of experiences (Front-End).
         </div>
       </div>
     </div>
@@ -42,8 +42,8 @@
           <template v-slot:title>
             <div class="font-montserrat-regular">Front-End Developer</div>
             <div class="q-mt-sm font-size-16">
-              <span class="font-montserrat-bold">Procurement System</span>
-              <span class="font-montserrat-regular">
+              <span class="font-montserrat-regular">Procurement System</span>
+              <span class="font-montserrat-italic">
                 , Zeus Consulting Co.,Ltd. (outsourcing of Central Pattana Co.,
                 Ltd.)
               </span>
@@ -73,8 +73,10 @@
           <template v-slot:title>
             <div class="font-montserrat-regular">Internship</div>
             <div class="q-mt-sm font-size-16">
-              <span class="font-montserrat-bold">Clothing Sales Website</span>
-              <span class="font-montserrat-regular">
+              <span class="font-montserrat-regular"
+                >Clothing Sales Website</span
+              >
+              <span class="font-montserrat-italic">
                 , Electronic Shell Co.,Ltd.
               </span>
             </div>
@@ -84,7 +86,7 @@
             <br />
             - UX/UI Design
             <br />
-            - Frontend & Backend Development (ฺBasic)
+            - Frontend & Backend Development (Basic)
           </div>
         </q-timeline-entry>
       </q-timeline>

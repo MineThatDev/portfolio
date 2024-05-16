@@ -15,7 +15,7 @@
             Web Developer
           </div>
           <div class="font-montserrat-bold font-size-20 text-grey q-my-lg">
-            Hi, I'm Ruchchanon Sirisan, A passionate Web Developer based in
+            Hello World!, I'm Ruchchanon Sirisan, A Web Developer based in
             Pathum Thani, Thailand.
           </div>
           <div>

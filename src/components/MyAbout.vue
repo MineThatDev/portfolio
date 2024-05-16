@@ -4,7 +4,7 @@
       class="col-12 q-px-md"
       :class="$q.screen.gt.sm ? 'text-left' : 'text-center'"
     >
-      <div class="text-black font-montserrat-bold font-size-28">About</div>
+      <div class="text-black font-montserrat-bold font-size-28">About Me</div>
     </div>
     <div class="row col-12" :class="$q.screen.gt.sm ? 'q-mt-xl' : 'q-mt-sm'">
       <div
@@ -27,12 +27,67 @@
         <div
           class="font-montserrat-regular font-size-14 text-black q-px-xl font-size-20"
         >
-          My name is Ruchchanon Sirisan. I've been graduated in Bachelor of
-          computer science at Khonkaen University, (2018-2021). I'm a worked as
-          a Web Developer, with 2 years of experiences (Front-End) at Zeus
-          Consulting Co.,Ltd (collaborated with Central Pattana Plc.)
+          I've been graduated in Bachelor of computer science at Khonkaen
+          University, (2018-2021). I'm a worked as a Web Developer, with 2 years
+          of experiences (Front-End)
         </div>
       </div>
+    </div>
+    <div class="q-px-xl q-py-lg">
+      <dir class="q-mb-lg font-size-20 font-montserrat-bold text-center">
+        Work Experience
+      </dir>
+      <q-timeline color="grey">
+        <q-timeline-entry subtitle="August, 2022 - March, 2024" icon="work">
+          <template v-slot:title>
+            <div class="font-montserrat-regular">Front-End Developer</div>
+            <div class="q-mt-sm font-size-16">
+              <span class="font-montserrat-bold">Procurement System</span>
+              <span class="font-montserrat-regular">
+                , Zeus Consulting Co.,Ltd. (outsourcing of Central Pattana Co.,
+                Ltd.)
+              </span>
+            </div>
+          </template>
+          <div class="font-montserrat-regular">
+            The requester can search or select products from the catalog
+            (catalog type), if there is no desired product, The requester can
+            specify product information (become non-catalog type). When the
+            requester completes the document information, The document is sent
+            to multiple processes in the system (every process involves
+            approval, validation, and calculation). The document goes through
+            the PR PO GR processes sequentially. Finally, end the processes by
+            making a billing document for payment.<br />
+            <br />
+            - Frontend Development (Vue, Quasar)
+            <br />
+            - Responsive Website
+            <br />
+            - RESTful API, SOAP
+            <br />
+            - Web Performance Optimization
+          </div>
+        </q-timeline-entry>
+
+        <q-timeline-entry subtitle="May, 2022 - June, 2022" icon="work">
+          <template v-slot:title>
+            <div class="font-montserrat-regular">Internship</div>
+            <div class="q-mt-sm font-size-16">
+              <span class="font-montserrat-bold">Clothing Sales Website</span>
+              <span class="font-montserrat-regular">
+                , Electronic Shell Co.,Ltd.
+              </span>
+            </div>
+          </template>
+          <div class="font-montserrat-regular">
+            - Learn & Practice development tools (Vue, Nuxt, Vite, Tailwind)
+            <br />
+            - UX/UI Design
+            <br />
+            - Frontend & Backend Development (ฺBasic)
+          </div>
+        </q-timeline-entry>
+      </q-timeline>
     </div>
   </div>
 </template>

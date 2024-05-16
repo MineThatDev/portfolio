@@ -8,13 +8,13 @@
     </div>
     <div
       class="flex flex-center"
-      :style="$q.screen.gt.sm ? 'margin-top: 24rem' : 'margin-top: 8rem'"
+      :style="$q.screen.gt.sm ? 'margin-top: 20rem' : 'margin-top: 8rem'"
     >
       <MyPortfolio id="portfolio" />
     </div>
     <div
       class="flex flex-center"
-      :style="$q.screen.gt.sm ? 'margin-top: 24rem' : 'margin-top: 8rem'"
+      :style="$q.screen.gt.sm ? 'margin-top: 20rem' : 'margin-top: 8rem'"
     >
       <MyAbout id="about" />
     </div>
@@ -22,8 +22,8 @@
       class="flex flex-center"
       :style="
         $q.screen.gt.sm
-          ? 'margin-top: 24rem; margin-bottom: 4rem'
-          : 'margin-top: 8rem; margin-bottom: 2rem'
+          ? 'margin-top: 14rem; margin-bottom: 4rem'
+          : 'margin-top: 4rem; margin-bottom: 2rem'
       "
     >
       <MyContact id="contact" />

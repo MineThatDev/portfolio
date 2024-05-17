@@ -8,6 +8,9 @@ export default function commonFunction() {
     let target = getScrollTarget(ele);
     let offset = ele.offsetTop;
     let duration = 500;
+    if ($q.screen.gt.sm && id === "portfolio") offset += 150;
+    if ($q.screen.gt.sm && id === "about") offset += 130;
+    if ($q.screen.gt.sm && id === "contact") offset += 150;
     setVerticalScrollPosition(target, offset, duration);
   };
   const showNotification = (type, message, position) => {

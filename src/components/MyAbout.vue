@@ -28,7 +28,7 @@
           class="font-montserrat-regular font-size-14 text-black q-px-xl font-size-20"
         >
           The name's Ruchchanon Sirisan, I've been graduated in Bachelor of
-          computer science at Khonkaen University, (2018-2021). I'm a worked as
+          computer science at Khonkaen University, (2018-2022). I'm a worked as
           a Web Developer, with 2 years of experiences (Front-End).
         </div>
       </div>
@@ -62,6 +62,8 @@
             - Frontend Development (Vue, Quasar)
             <br />
             - Responsive Website
+            <br />
+            - Authentication
             <br />
             - RESTful API, SOAP
             <br />

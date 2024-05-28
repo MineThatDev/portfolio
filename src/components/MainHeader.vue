@@ -48,7 +48,7 @@ const headerTabs = [
     id: "profile",
   },
   {
-    label: "Project",
+    label: "Projects",
     name: "Project",
     id: "portfolio",
   },

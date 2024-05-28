@@ -4,6 +4,7 @@ const { getScrollTarget, setVerticalScrollPosition } = scroll;
 export default function commonFunction() {
   const $q = useQuasar();
   const scrollToElementById = (id) => {
+    console.log("id", id);
     let ele = document.getElementById(id);
     let target = getScrollTarget(ele);
     let offset = ele.offsetTop;

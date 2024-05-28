@@ -34,9 +34,9 @@
       </div>
     </div>
     <div class="q-px-xl q-py-lg">
-      <dir class="q-mb-lg font-size-20 font-montserrat-bold text-center">
+      <div class="q-mb-lg font-size-20 font-montserrat-bold text-center">
         Work Experience
-      </dir>
+      </div>
       <q-timeline color="grey">
         <q-timeline-entry subtitle="August, 2022 - March, 2024" icon="work">
           <template v-slot:title>

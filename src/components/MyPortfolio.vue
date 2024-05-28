@@ -121,7 +121,7 @@
           :class="$q.screen.gt.sm ? '' : 'q-mt-xl'"
         >
           <div class="text-center font-montserrat-bold font-size-20">
-            Social App
+            Social Application
           </div>
           <div
             class="font-montserrat-semi-bold font-size-16 text-grey q-py-xl q-px-xl"

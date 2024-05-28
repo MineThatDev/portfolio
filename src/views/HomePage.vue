@@ -14,6 +14,12 @@
     </div>
     <div
       class="flex flex-center"
+      :style="$q.screen.gt.sm ? 'margin-top: 8rem' : 'margin-top: 4rem'"
+    >
+      <MyPortfolio2 />
+    </div>
+    <div
+      class="flex flex-center"
       :style="$q.screen.gt.sm ? 'margin-top: 20rem' : 'margin-top: 8rem'"
     >
       <MyAbout id="about" />
@@ -35,6 +41,7 @@
 // @ is an alias to /src
 import MyProfile from "@/components/MyProfile.vue";
 import MyPortfolio from "@/components/MyPortfolio.vue";
+import MyPortfolio2 from "@/components/MyPortfolio2.vue";
 import MyAbout from "@/components/MyAbout.vue";
 import MyContact from "@/components/MyContact.vue";
 export default {
@@ -44,6 +51,7 @@ export default {
     MyPortfolio,
     MyAbout,
     MyContact,
+    MyPortfolio2,
   },
   setup() {
     return {};
